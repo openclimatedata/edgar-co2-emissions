@@ -1,0 +1,46 @@
+{
+  "sources": [
+    {
+      "name": "CO2 time series 1990-2014 per region/country",
+      "url": "http://edgar.jrc.ec.europa.eu/news_docs/CO2_1970-2014_dataset_of_CO2_report_2015.xls"
+    }
+  ],
+  "resources": [
+    {
+      "name": "edgar-co2-emissions",
+      "path": "data/edgar-co2-emissions.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 289952,
+      "schema": {
+        "fields": [
+          {
+            "name": "Name",
+            "type": "string",
+            "description": "Country or group name"
+          },
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Three-letter ISO code or empty"
+          },
+          {
+            "name": "Year",
+            "type": "integer",
+            "description": "Year"
+          },
+          {
+            "name": "Emissions",
+            "type": "number",
+            "description": "CO₂ emissions",
+            "unit": "Gg"
+          }
+        ],
+        "primaryKey": ["Name", "Year"]
+      }
+    }
+  ],
+  "name": "edgar-co2-emissions",
+  "title": "EDGAR CO₂ time series 1990-2014 per region/country",
+  "description": "2015 update with 2014 emissions of fossil fuel use and industrial processs emissions (cement production, carbonate use of limestone and dolomite, non-energy use of fuels and other combustion)"
+}
