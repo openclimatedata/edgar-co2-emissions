@@ -10,6 +10,7 @@ The original Excel file data is packaged here in CSV file format.
 
 For convenience three-letter country codes were added to the data when available,
 the following have none assigned:
+
 Int. Aviation, Int. Shipping, Serbia and Montenegro, Sudan (former), World
 
 Date: 25/11/2015
@@ -57,11 +58,10 @@ The [Terms of Use](http://edgar.jrc.ec.europa.eu/terms_of_use.php) of the
 Joint Research Centre EDGAR list the following
 suggestion for acknowledgment in publications, presentations, websites, etc.:
 
-## For the CO2 timeseries till year 2014
-
 ### Source:
 
 European Commission, Joint Research Centre (JRC)/Netherlands Environmental Assessment Agency (PBL). Emission Database for Global Atmospheric Research (EDGAR), release CO2 time series 1970 - 2014, http://edgar.jrc.ec.europa.e/overview.php?v=CO2ts1990-2014, 2015.
 
 ### Reference:
+
 Olivier, J.G.J., Janssens-Maenhout, G., Muntean, M. and Peters, J.A.H.W. (2015) Trends in global CO2 emissions: 2015 Report. PBL Netherlands Environmental Assessment Agency, The Hague; European Commission, Joint Research Centre (JRC), Institute for Environment and Sustainability (IES).  http://edgar.jrc.ec.europa.eu/news_docs/jrc-2015-trends-in-global-co2-emissions-2015-report-98184.pdf. JRC report 98184/ PBL report 1803, 2015.
