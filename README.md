@@ -9,6 +9,10 @@ Reference: European Commission, Joint Research Centre (EC-JRC)/Netherlands Envir
 
 Unit: kton (Gg) CO2 per year
 
+Non-standard country codes:
+
+EU28, FRA_MCO, ISR_PSE, ITA_SMR_VAT, SRB_MNE, ESP_AND, SDN_SSD, CHE_LIE, WORLD, AIR, SEA
+
 
 # References
 
