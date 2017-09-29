@@ -1,67 +1,40 @@
-CO₂ emissions time series 1990-2014 per region/country
-provided in the Emissions Database for Global Atmospheric Research (EDGAR) by
-the Joint Research Centre (JRC)/PBL Netherlands Environmental Assessment Agency.
-The original Excel file data is packaged here in CSV file format.
+EDGARv4.3.2_FT2016 of September 2016
 
-> 2015 update with 2014 emissions of fossil fuel use and industrial processs emissions (cement production, carbonate use of limestone and dolomite, non-energy use of fuels and other combustion)
+Timeseries 1970-2016 of CO2 emissions by country and sector (Transport, Other industrial combustion, Buildings, Non-combustion, Power Industry) in kton CO2 / year.
+
+Reference: European Commission, Joint Research Centre (EC-JRC)/Netherlands Environmental Assessment Agency (PBL). Emissions Database for Global Atmospheric Research (EDGAR), release EDGARv4.3.2_FT2016  (1970 - 2016), http://edgar.jrc.ec.europa.eu/overview.php?v=booklet2017&dst=CO2emi, 2017.
 
 
 # Notes
 
-For convenience three-letter country codes were added to the data when available,
-the following have none assigned:
-
-Int. Aviation, Int. Shipping, Serbia and Montenegro, Sudan (former), World
-
-Date: 25/11/2015
-
 Unit: kton (Gg) CO2 per year
 
-> Note that these timeseries report country-specific CO2 emission totals of fossil fuel use and industrial processes (cement production, carbonate use of limestone and dolomite, non-energy use of fuels and other combustion). Excluded are: short-cycle biomass burning (such as agricultural waste burning) and large-scale biomass burning (such as forest fires).
 
+# References
 
-# Sources
+Janssens-Maenhout, G., Crippa, M., Guizzardi, D., Muntean, M., Schaaf, E., Dentener, F., Bergamaschi, P., Pagliari, V., Olivier, J.G.J., Peters, J.A.H.W., van Aardenne, J.A., Monni, S., Doering, U., Petrescu, A.M.R. (2017) EDGARv4.3.2 Global Atlas of the three major Greenhouse Gas Emissions for the period 1970-2012, Earth Syst. Sci. Data Discuss., https://doi.org/10.5194/essd-2017-79, in review, 2017.
 
-The EDGARv4.3FT2014 emissions are calculated based on
-	the energy balance statistics of IEA (2014) (http://www.oecd-ilibrary.org/energy/co2-emissions-from-fuel-combustion-2014_co2_fuel-2014-en),
-	BP (2013-2014) data of the BP Statistical Review of World Energy, June 2015 (http://www.bp.com/en/global/corporate/about-bp/energy-economics/statisticalreview-of-world-energy.html), Chinese coal comsumption data of the China Statistical Abstract, October 2015 (http://data.stats.gov.cn/english/easyquery.htm?cn=C01).
+Janssens-Maenhout, G., Crippa, M., Guizzardi, D., Muntean, M., Schaaf, E., Olivier, J.G.J., Peters, J.A.H.W., Schure, K.M., Fossil CO2 and GHG emissions of all world countries, EUR 28766 EN,Publications Office of the European Union, Luxembourg, 2017, ISBN 978-92-79-73207-2, doi:10.2760/709792, JRC107877.
+
+Olivier JGJ, Schure KM, and Peters JAHW. (2017). Trends in global CO2 and total greenhouse gas emissions. 2017 Report. PBL, The Hague. In prep. Internet: http://www.pbl.nl/en/trends-in-global-co2-emissions.
 
 
 # Preparation
 
-To update or regenerate the CSV file the following steps need to be run with Python3:
+The `Makefile` requires Python3 and will automatically install its dependencies
+into a Virtualenv when run with
 
-Install requirements:
-
-```
-pip install -r scripts/requirements.txt
-```
-
-Run the script to generate CSV:
-```
-python scripts/process.py
+```shell
+make
 ```
 
 
 # Citation
 
-EDGARv4.3, European Commission, Joint Research Centre (JRC)/PBL Netherlands Environmental Assessment Agency. Emission Database for Global Atmospheric Research (EDGAR), release version 4.3. http://edgar.jrc.ec.europe.eu, 2015 forthcoming
-
-The EDGARv4.3FT2014 emissions are calculated based on the energy balance statistics of IEA (2014) (http://www.oecd-ilibrary.org/energy/co2-emissions-from-fuel-combustion-2014_co2_fuel-2014-en) and BP (2013-2014) data of the BP Statistical Review of World Energy, June 2015 (http://www.bp.com/en/global/corporate/about-bp/energy-economics/statisticalreview-of-world-energy.html) and recent Chinese coal comsumption data of the China Statistical Abstract, October 2015 ( http://data.stats.gov.cn/english/easyquery.htm?cn=C01).
-
-Olivier, J.G.J., Janssens-Maenhout, G., Muntean, M. Peters, J.H.A.W., Trends in global CO2 emissions - 2015 report, JRC report 98184 / PBL report 1803, November 2015. (http://edgar.jrc.ec.europa.eu/news_docs/jrc-2015-trends-in-global-co2-emissions-2015-report-98184.pdf)
+Janssens-Maenhout, G., Crippa, M., Guizzardi, D., Muntean, M., Schaaf, E.,
+ Olivier, J.G.J., Peters, J.A.H.W., Schure, K.M., Fossil CO2 and GHG emissions of all world countries, EUR 28766 EN,Publications Office of the European Union, Luxembourg, 2017, ISBN 978-92-79-73207-2, doi:10.2760/709792, JRC107877.
 
 
 # License
 
-The [Terms of Use](http://edgar.jrc.ec.europa.eu/terms_of_use.php) of the
-Joint Research Centre EDGAR list the following
-suggestion for acknowledgment in publications, presentations, websites, etc.:
-
-### Source:
-
-European Commission, Joint Research Centre (JRC)/Netherlands Environmental Assessment Agency (PBL). Emission Database for Global Atmospheric Research (EDGAR), release CO2 time series 1970 - 2014, http://edgar.jrc.ec.europa.e/overview.php?v=CO2ts1990-2014, 2015.
-
-### Reference:
-
-Olivier, J.G.J., Janssens-Maenhout, G., Muntean, M. and Peters, J.A.H.W. (2015) Trends in global CO2 emissions: 2015 Report. PBL Netherlands Environmental Assessment Agency, The Hague; European Commission, Joint Research Centre (JRC), Institute for Environment and Sustainability (IES).  http://edgar.jrc.ec.europa.eu/news_docs/jrc-2015-trends-in-global-co2-emissions-2015-report-98184.pdf. JRC report 98184/ PBL report 1803, 2015.
+See also [Terms of Use](http://edgar.jrc.ec.europa.eu/terms_of_use.php).

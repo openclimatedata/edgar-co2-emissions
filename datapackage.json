@@ -1,8 +1,8 @@
 {
   "sources": [
     {
-      "name": "CO2 time series 1990-2014 per region/country",
-      "url": "http://edgar.jrc.ec.europa.eu/news_docs/CO2_1970-2014_dataset_of_CO2_report_2015.xls"
+      "name": "EDGAR’s Global Fossil CO2 Emissions from 1970 to 2016 (EDGARv4.3.2_FT2016 dataset)",
+      "url": "http://edgar.jrc.ec.europa.eu/overview.php?v=CO2andGHG1970-2016"
     }
   ],
   "resources": [
@@ -11,18 +11,22 @@
       "path": "data/edgar-co2-emissions.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "bytes": 289952,
       "schema": {
         "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "Three-letter ISO code or special or combined ones like EU28, FRA_MCO, ISR_PSE, ITA_SMR_VAT, SRB_MNE, ESP_AND, SDN_SSD, CHE_LIE, WORLD, AIR, SEA"
+          },
           {
             "name": "Name",
             "type": "string",
             "description": "Country or group name"
           },
           {
-            "name": "Code",
+            "name": "Sector",
             "type": "string",
-            "description": "Three-letter ISO code or empty"
+            "description": "'Transport', 'Other industrial combustion', 'Buildings', 'Non-combustion', or 'Power Industry'"
           },
           {
             "name": "Year",
@@ -33,14 +37,14 @@
             "name": "Emissions",
             "type": "number",
             "description": "CO₂ emissions",
-            "unit": "Gg"
+            "unit": "kt"
           }
         ],
-        "primaryKey": ["Name", "Year"]
+        "primaryKey": ["Code", "Name", "Sector", "Year"]
       }
     }
   ],
   "name": "edgar-co2-emissions",
-  "title": "EDGAR CO₂ time series 1990-2014 per region/country",
-  "description": "2015 update with 2014 emissions of fossil fuel use and industrial processs emissions (cement production, carbonate use of limestone and dolomite, non-energy use of fuels and other combustion)"
+  "title": "EDGARv4.3.2_FT2016: Timeseries 1970-2016 of CO₂ emissions",
+  "description": "EDGARv4.3.2_FT2016: Timeseries 1970-2016 of CO₂ emissions by country and sector (Transport, Other industrial combustion, Buildings, Non-combustion, Power Industry) in kton CO2 / year."
 }
