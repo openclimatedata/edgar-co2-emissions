@@ -45,6 +45,6 @@
     }
   ],
   "name": "edgar-co2-emissions",
-  "title": "EDGARv4.3.2_FT2016: Timeseries 1970-2016 of CO₂ emissions",
-  "description": "EDGARv4.3.2_FT2016: Timeseries 1970-2016 of CO₂ emissions by country and sector (Transport, Other industrial combustion, Buildings, Non-combustion, Power Industry) in kton CO2 / year."
+  "title": "EDGAR CO₂ emissions 1970-2016",
+  "description": "Timeseries of CO₂ emissions by country and sector (Transport, Other industrial combustion, Buildings, Non-combustion, Power Industry) in kt/year."
 }
