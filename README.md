@@ -1,9 +1,8 @@
-EDGARv4.3.2_FT2016 of September 2016
+Data Package of the EDGAR’s Global Fossil CO2 Emissions from 1970 to 2016 (EDGARv4.3.2_FT2016 dataset)
 
 Timeseries 1970-2016 of CO2 emissions by country and sector (Transport, Other industrial combustion, Buildings, Non-combustion, Power Industry) in kton CO2 / year.
 
 Reference: European Commission, Joint Research Centre (EC-JRC)/Netherlands Environmental Assessment Agency (PBL). Emissions Database for Global Atmospheric Research (EDGAR), release EDGARv4.3.2_FT2016  (1970 - 2016), http://edgar.jrc.ec.europa.eu/overview.php?v=booklet2017&dst=CO2emi, 2017.
-
 
 # Notes
 
