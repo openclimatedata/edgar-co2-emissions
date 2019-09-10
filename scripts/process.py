@@ -8,17 +8,13 @@ root = Path(__file__).parents[1]
 
 
 total_emissions = pd.read_csv(
-    root / "archive/EDGARv432_FT2016_CO2_total_emissions_1970-2016.csv",
-    skiprows=5
+    root / "archive/EDGARv5.0_FT2017_CO2_total_emissions_1970-2017.csv"
 )
-
-assert total_emissions.substance.unique() == "CO2"
-total_emissions = total_emissions.drop("substance", axis=1)
 
 total_emissions = total_emissions.rename(columns={
     "ISO_CODE": "Code",
-    "ISO_NAME": "Name",
-    "sector": "Sector"
+    "country_name": "Name",
+    "Sector": "Sector"
 })
 
 total_emissions = total_emissions.melt(

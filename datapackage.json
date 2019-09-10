@@ -1,8 +1,8 @@
 {
   "sources": [
     {
-      "name": "EDGAR’s Global Fossil CO2 Emissions from 1970 to 2016 (EDGARv4.3.2_FT2016 dataset)",
-      "url": "http://edgar.jrc.ec.europa.eu/overview.php?v=CO2andGHG1970-2016"
+      "name": "EDGAR’s Global Fossil CO2 Emissions from 1970 to 2017 (EDGARv5.0_FT2017 dataset)",
+      "url": "http://edgar.jrc.ec.europa.eu/overview.php?v=booklet2018"
     }
   ],
   "resources": [
@@ -16,7 +16,7 @@
           {
             "name": "Code",
             "type": "string",
-            "description": "Three-letter ISO code or special or combined ones like EU28, FRA_MCO, ISR_PSE, ITA_SMR_VAT, SRB_MNE, ESP_AND, SDN_SSD, CHE_LIE, WORLD, AIR, SEA"
+            "description": "Three-letter ISO code or special or combined ones like FRA_MCO, ISR_PSE, ITA_SMR_VAT, SRB_MNE, ESP_AND, SDN_SSD, CHE_LIE, AIR, SEA (WORLD and EU28 were removed in EDGARv5.0)"
           },
           {
             "name": "Name",
@@ -26,7 +26,7 @@
           {
             "name": "Sector",
             "type": "string",
-            "description": "'Transport', 'Other industrial combustion', 'Buildings', 'Non-combustion', or 'Power Industry'"
+            "description": "'Buildings', 'Power Industry', 'Transport', 'Other industrial combustion', or 'Other sectors'"
           },
           {
             "name": "Year",
@@ -45,6 +45,6 @@
     }
   ],
   "name": "edgar-co2-emissions",
-  "title": "EDGAR CO₂ emissions 1970-2016",
-  "description": "Timeseries of CO₂ emissions by country and sector (Transport, Other industrial combustion, Buildings, Non-combustion, Power Industry) in kt/year."
+  "title": "EDGAR CO₂ emissions 1970-2017",
+  "description": "Timeseries of CO₂ emissions by country and sector (Buildings, Power Industry, Transport, Other industrial combustion, Other sectors) in kt/year."
 }
