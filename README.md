@@ -1,6 +1,6 @@
 Data Package of the EDGAR’s Global Fossil CO2 Emissions from 1970 to 2017 (EDGARv5.0_FT2017 dataset)
 
-Timeseries 1970–2017 of CO₂ emissions by country and sector (Buildings, Power Industry, Transport, Other industrial combustion, Other sectors) in kton CO₂/year.
+Timeseries 1970–2017 of CO₂ emissions by country and sector (Buildings, Power Industry, Transport, Other industrial combustion, Other sectors) in Mton CO₂/year.
 
 Source: European Commission, Joint Research Centre (EC-JRC)/Netherlands Environmental Assessment Agency (PBL). Emissions Database for Global Atmospheric Research (EDGAR), release EDGARv5.0_FT2017  (1970–2017), http://edgar.jrc.ec.europa.eu/overview.php?v=booklet2018, 2018-11-23.
 
@@ -8,7 +8,7 @@ For more information or data JRC-EDGAR@ec.europa.eu
 
 # Notes
 
-Unit: kton (Gg) CO2 per year
+Unit: Mton (Tg) CO₂ per year
 
 Non-standard country codes:
 
@@ -16,7 +16,7 @@ FRA_MCO, ISR_PSE, ITA_SMR_VAT, SRB_MNE, ESP_AND, SDN_SSD, CHE_LIE, AIR, SEA
 
 (WORLD and EU28 were removed in EDGARv5.0)
 
-In this report fossil CO2 emissions include sources from fossil fuel use (combustion, flaring), industrial processes (cement, steel, chemicals and urea) and product use. Please note that in the analysis presented in this report no short cycle carbon CO2 is included in any sector.
+In this report fossil CO₂ emissions include sources from fossil fuel use (combustion, flaring), industrial processes (cement, steel, chemicals and urea) and product use. Please note that in the analysis presented in this report no short cycle carbon CO₂ is included in any sector.
 
 EDGARv5.0 uses international activity data, mainly energy balance statistics of IEA (2017) for 1970-2015 to estimate CO2 from fossil fuel consumption. These emissions are extended (FT approach) to 2016 and 2017 using BP statistics. The respective sectoral breakdowns of emissions for 2015 are extrapolated to 2016 and 2017.
 
