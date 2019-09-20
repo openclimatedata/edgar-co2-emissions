@@ -37,7 +37,7 @@
             "name": "Emissions",
             "type": "number",
             "description": "CO₂ emissions",
-            "unit": "kt"
+            "unit": "Mt"
           }
         ],
         "primaryKey": ["Code", "Name", "Sector", "Year"]
@@ -46,5 +46,5 @@
   ],
   "name": "edgar-co2-emissions",
   "title": "EDGAR CO₂ emissions 1970-2017",
-  "description": "Timeseries of CO₂ emissions by country and sector (Buildings, Power Industry, Transport, Other industrial combustion, Other sectors) in kt/year."
+  "description": "Timeseries of CO₂ emissions by country and sector (Buildings, Power Industry, Transport, Other industrial combustion, Other sectors) in Mt/year."
 }
