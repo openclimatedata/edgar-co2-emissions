@@ -6,7 +6,7 @@ from countrynames import to_code_3
 root = Path(__file__).parents[1]
 
 extra_codes = {
-    "former Yugoslav Republic of Macedonia, the": "MKD",
+    "North Macedonia": "MKD",
     "France and Monaco": "FRA_MCO",
     "Israel and Palestine, State of": "ISR_PSE",
     "Italy, San Marino and the Holy See": "ITA_SMR_VAT",
@@ -30,14 +30,14 @@ def to_code(name):
 
 
 co2_emissions = pd.read_excel(
-    root / "archive/EDGARv5.0_FT2017_fossil_CO2_booklet2018.xls",
+    root / "archive/EDGARv5.0_FT2018_fossil_CO2_GHG_booklet2019.xls",
     sheet_name="fossil_CO2_by_sector_and_countr",
 )
 
 co2_emissions["Code"] = co2_emissions.country_name.apply(to_code)
 co2_emissions = co2_emissions.rename(columns={"country_name": "Name"})
 
-years = range(1970, 2018)
+years = range(1970, 2019)
 co2_emissions = co2_emissions.melt(
     id_vars=["Code", "Name", "Sector"],
     value_vars=years,
