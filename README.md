@@ -1,6 +1,6 @@
 Data Package of the EDGAR’s Global Fossil CO2 Emissions from 1970 to 2017 (EDGARv5.0_FT2017 dataset)
 
-Timeseries 1970–2017 of CO₂ emissions by country and sector (Buildings, Power Industry, Transport, Other industrial combustion, Other sectors) in kton CO₂/year.
+Timeseries 1970–2017 of CO₂ emissions by country and sector (Buildings, Power Industry, Transport, Other industrial combustion, Other sectors) in Mt CO₂/year.
 
 Source: European Commission, Joint Research Centre (EC-JRC)/Netherlands Environmental Assessment Agency (PBL). Emissions Database for Global Atmospheric Research (EDGAR), release EDGARv5.0_FT2017  (1970–2017), http://edgar.jrc.ec.europa.eu/overview.php?v=booklet2018, 2018-11-23.
 
@@ -8,7 +8,7 @@ For more information or data JRC-EDGAR@ec.europa.eu
 
 # Notes
 
-Unit: kton (Gg) CO2 per year
+Unit: Mt CO₂ per year
 
 Non-standard country codes:
 
