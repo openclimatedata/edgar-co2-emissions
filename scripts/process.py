@@ -1,38 +1,50 @@
-import os
 import pandas as pd
 
 from pathlib import Path
-
+from countrynames import to_code_3
 
 root = Path(__file__).parents[1]
 
+extra_codes = {
+    "former Yugoslav Republic of Macedonia, the": "MKD",
+    "France and Monaco": "FRA_MCO",
+    "Israel and Palestine, State of": "ISR_PSE",
+    "Italy, San Marino and the Holy See": "ITA_SMR_VAT",
+    "Spain and Andorra": "ESP_AND",
+    "Sudan and South Sudan": "SDN_SSD",
+    "Switzerland and Liechtenstein": "CHE_LIE",
+    "Faroes": "FRO",
+    "International Aviation": "AIR",
+    "International Shipping": "SEA",
+}
 
-total_emissions = pd.read_csv(
-    root / "archive/EDGARv432_FT2016_CO2_total_emissions_1970-2016.csv",
-    skiprows=5
+
+def to_code(name):
+    code = to_code_3(name)
+    if code is None:
+        try:
+            code = extra_codes[name]
+        except KeyError:
+            code = None
+    return code
+
+
+co2_emissions = pd.read_excel(
+    root / "archive/EDGARv5.0_FT2017_fossil_CO2_booklet2018.xls",
+    sheet_name="fossil_CO2_by_sector_and_countr",
 )
 
-assert total_emissions.substance.unique() == "CO2"
-total_emissions = total_emissions.drop("substance", axis=1)
+co2_emissions["Code"] = co2_emissions.country_name.apply(to_code)
+co2_emissions = co2_emissions.rename(columns={"country_name": "Name"})
 
-total_emissions = total_emissions.rename(columns={
-    "ISO_CODE": "Code",
-    "ISO_NAME": "Name",
-    "sector": "Sector"
-})
-
-total_emissions = total_emissions.melt(
+years = range(1970, 2018)
+co2_emissions = co2_emissions.melt(
     id_vars=["Code", "Name", "Sector"],
+    value_vars=years,
     var_name="Year",
-    value_name="Emissions"
+    value_name="Emissions",
 )
 
-non_standard = [i for i in total_emissions.Code.unique() if len(i) > 3]
-print("Non standard country codes:")
-print(non_standard)
+co2_emissions = co2_emissions.set_index(["Code", "Name", "Sector"])
 
-total_emissions.to_csv(
-    "data/edgar-co2-emissions.csv",
-    encoding="UTF-8",
-    index=False
-)
+co2_emissions.to_csv("data/edgar-co2-emissions.csv", encoding="UTF-8")

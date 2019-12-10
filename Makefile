@@ -1,4 +1,4 @@
-data/edgar-co2-emissions.csv: venv
+data/edgar-co2-emissions.csv: venv scripts/process.py
 	./venv/bin/python scripts/process.py
 
 venv: scripts/requirements.txt
