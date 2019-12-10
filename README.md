@@ -16,14 +16,15 @@ FRA_MCO, ISR_PSE, ITA_SMR_VAT, SRB_MNE, ESP_AND, SDN_SSD, CHE_LIE, AIR, SEA
 
 (WORLD and EU28 were removed in EDGARv5.0)
 
-In this report fossil CO2 emissions include sources from fossil fuel use (combustion, flaring), industrial processes (cement, steel, chemicals and urea) and product use. Please note that in the analysis presented in this report no short cycle carbon CO2 is included in any sector.
+> In this report fossil CO2 emissions include sources from fossil fuel use (combustion, flaring), industrial processes (cement, steel, chemicals and urea) and product use. Please note that in the analysis presented in this report no short cycle carbon CO2 is included in any sector.
+>
+> EDGARv5.0 uses international activity data, mainly energy balance statistics of IEA (2017) for 1970-2015 to estimate CO2 from fossil fuel consumption. These emissions are extended (FT approach) to 2016 and 2017 using BP statistics. The respective sectoral breakdowns of emissions for 2015 are extrapolated to 2016 and 2017.
+>
+> Updates for 2016 and 2017 for cement, lime, ammonia and ferroalloys production are based on USGS statistics, urea production and consumption are based on IFA
+> statistics, associated gas used from flaring from GGFR/NOAA, steel production from world steel and cement clinker production from UNFCCC (2018b).
+>
+> For the other sectors with lower contributions to the global CO2 emissions, the time series in EDGARv4.3.2 have been extended for the period 2013-2017 using proxy data and relative changes in activity data compared to 2012, reported in recent data sources.
 
-EDGARv5.0 uses international activity data, mainly energy balance statistics of IEA (2017) for 1970-2015 to estimate CO2 from fossil fuel consumption. These emissions are extended (FT approach) to 2016 and 2017 using BP statistics. The respective sectoral breakdowns of emissions for 2015 are extrapolated to 2016 and 2017.
-
-Updates for 2016 and 2017 for cement, lime, ammonia and ferroalloys production are based on USGS statistics, urea production and consumption are based on IFA
-statistics, associated gas used from flaring from GGFR/NOAA, steel production from world steel and cement clinker production from UNFCCC (2018b).
-
-For the other sectors with lower contributions to the global CO2 emissions, the time series in EDGARv4.3.2 have been extended for the period 2013-2017 using proxy data and relative changes in activity data compared to 2012, reported in recent data sources.
 
 # References
 
