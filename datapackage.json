@@ -1,7 +1,7 @@
 {
   "sources": [
     {
-      "name": "EDGAR’s Global Fossil CO2 Emissions from 1970 to 2017 (EDGARv5.0_FT2017 dataset)",
+      "title": "EDGAR’s Global Fossil CO2 Emissions from 1970 to 2017 (EDGARv5.0_FT2017 dataset)",
       "url": "http://edgar.jrc.ec.europa.eu/overview.php?v=booklet2018"
     }
   ],
